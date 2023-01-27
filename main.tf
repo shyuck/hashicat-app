@@ -201,6 +201,8 @@ resource "aws_key_pair" "hashicat" {
   public_key = tls_private_key.hashicat.public_key_openssh
 }
 
+
+
 module "s3-bucket" {
   source  = "cloudposse/s3-bucket/aws"
   version = "3.0.0"
