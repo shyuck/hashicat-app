@@ -1,3 +1,11 @@
+cd /root/hashicat-aws
+git status
+git branch update
+git checkout update
+git add .
+git commit -a -m "Updated HTML payload"
+git push --set-upstream origin update
+git request-pull HEAD~1 $REPO_URL update
 #!/bin/bash
 # Copyright (c) HashiCorp, Inc.
 
@@ -13,7 +21,7 @@ cat << EOM > /var/www/html/index.html
   <!-- BEGIN -->
   <center><img src="http://${PLACEHOLDER}/${WIDTH}/${HEIGHT}"></img></center>
   <center><h2>Meow World!</h2></center>
-  Welcome to ${PREFIX}'s app. Replace this text with your own.
+  Welcome to ${PREFIX}'s app I'm GsNeotek's Cedric. Replace this text with your own.
   <!-- END -->
 
   </div>
